@@ -5,16 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gokul Soman - Resume</title>
   <style>
+    /* Base styles */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f4f6fa;
       color: #333;
+      line-height: 1.6;
     }
 
+    a {
+      color: #1abc9c;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Grid layout */
     .container {
       display: grid;
-      grid-template-columns: 250px 1fr;
+      grid-template-columns: 280px 1fr;
       min-height: 100vh;
     }
 
@@ -26,30 +37,29 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: center;
     }
     .sidebar img {
-      width: 120px;
-      height: 120px;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
       border-radius: 50%;
       margin-bottom: 1rem;
       border: 3px solid #fff;
     }
     .sidebar h1 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin: 0.5rem 0;
     }
     .sidebar p {
       font-size: 0.9rem;
       color: #ddd;
-      text-align: center;
-    }
-    .sidebar a {
-      color: #1abc9c;
-      text-decoration: none;
+      margin-bottom: 1rem;
     }
     .contact-info {
-      margin-top: 2rem;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
+      text-align: left;
+      margin-top: 1rem;
     }
     .contact-info p {
       margin: 0.4rem 0;
@@ -77,6 +87,8 @@
     ul {
       margin: 0.5rem 0 0 1.2rem;
     }
+
+    /* Skills */
     .skills-list {
       display: flex;
       flex-wrap: wrap;
@@ -86,28 +98,32 @@
     .skill {
       background: #1abc9c;
       color: white;
-      padding: 0.3rem 0.7rem;
+      padding: 0.4rem 0.8rem;
       border-radius: 20px;
       font-size: 0.85rem;
     }
 
-    /* Responsive */
-    @media(max-width: 768px) {
+    /* Responsive styles */
+    @media(max-width: 900px) {
       .container {
         grid-template-columns: 1fr;
       }
       .sidebar {
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 1rem;
+        flex-direction: column;
+        padding: 1.5rem;
       }
       .sidebar img {
-        width: 60px;
-        height: 60px;
-        margin: 0;
+        width: 100px;
+        height: 100px;
       }
       .sidebar h1 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+      }
+      .contact-info {
+        text-align: center;
+      }
+      .main {
+        padding: 1.2rem;
       }
     }
   </style>
@@ -118,23 +134,21 @@
     <div class="sidebar">
       <img src="profile_pic.jpeg" alt="Gokul Soman">
       <h1>Gokul Soman</h1>
-      <p>Software Engineer<br>Building scalable apps & solving real-world problems</p>
+      <p>Engineer<br>Robotics/AI</p>
 
       <div class="contact-info">
         <p>📧 <a href="mailto:gokulsoman@outlook.com">gokulsoman@outlook.com</a></p>
         <p>📞 +91 7012145384</p>
-        <p>🌐 <a href="https://gokulsoman.github.io">gokulsoman.github.io</a></p>
         <p>💼 <a href="https://linkedin.com/in/gokulsoman" target="_blank">LinkedIn</a></p>
-        <p>🐙 <a href="https://github.com/gokulsoman" target="_blank">GitHub</a></p>
-	<p>📜 <a href="certificates.html">Certificates</a></p>
+        <p>🐙 <a href="https://github.com/gokulsoman" target="_blank">GitHub repos</a></p>
       </div>
     </div>
 
     <!-- Main content -->
     <div class="main">
       <div class="section">
-        <h2>Summary</h2>
-        <p>A programmer with a sound understanding in artificial intelligence, robotics and perception algorithms. Ability to take on projects and think laterally to provide solutions, exercising independent decision making and judgement. Always a student and able to adapt to changing environments.</p>
+        <h2>This is not a professional resume.</h2>
+        <p>Although I am planning to showcase some of my work here.</p>
       </div>
 
       <div class="section">
